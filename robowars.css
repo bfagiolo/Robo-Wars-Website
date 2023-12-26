@@ -1,0 +1,747 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: "DINNext";
+    /* uses gradient create contrast between body and footer */
+    background: linear-gradient(to bottom, black 0%, black 40%, hsl(0, 0%, 20%) 100%);
+    height: 100%;
+}
+
+#icon-row { 
+    padding: 10px; 
+    text-align: left; 
+}
+
+/* use of star images to create illusion of stars against black screen */
+
+#icon-row img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+#top-bar {
+    background-color: black; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width:95%;
+}
+
+
+.search {
+	background-color: #87CEEB;
+	border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.search a {
+	color: black;
+	font-family: "DINNext";
+}
+
+.search a:hover {
+	color: white;
+}
+
+.login-logo {
+    display: inline-block;          
+}
+
+a {
+    margin-left: 5px;
+    text-decoration: none; 
+    color: white; 
+}
+
+/* each nav element has light blue hover */
+
+a:hover {
+	color: #87CEEB;
+}
+
+.container {
+	display:flex;
+	justify-content: center;
+	margin-right: 2%;
+}
+
+#name {
+    text-align: center; 
+    margin-top: -70px;
+    font-family: "Star Wars";
+    background-color: black;
+    color: white;
+    font-size: 35px;
+}
+
+nav {
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: hsl(0, 0%, 65%); 
+    font-weight: bold; 
+    margin-right: 65px;
+    font-size: 18px;
+}
+
+nav a:hover {
+	color: #87CEEB; 
+    transform: scale(1.1); 
+}
+
+/* use white divider for separation */
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #555; 
+    margin-top: 18px; 
+}
+
+.team-heading {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.team-container {
+    display:inline-flex;
+    justify-content: center;
+}
+
+.team-container img {
+    border-radius: 150px;
+    width: 12%;
+    height: auto;
+    margin-right: 2%;
+}
+
+.team-row1 {
+    display:inline-flex;
+    justify-content: center;
+    width: 80%;
+    margin-left:20%;
+}
+
+
+.team-row1 img {
+    width: 40%;
+    height:auto;
+}
+
+.team-row1 p {
+    color:white;
+    width:40%;
+    text-align: left;
+    margin-left: 8%;
+    border: 1px solid white;
+    padding:15px;
+}
+
+/* main background image should take full width*/
+
+.mainimg {
+	width: 100vw;
+
+}
+
+/* text should be bright and in top left region */
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 4%; 
+    transform: translate(-50%, -50%);
+    transform: scaleY(2); 
+    color: white; 
+    font-size: 40px;
+    line-height: 1; 
+    font-weight: bold; 
+    text-align: left; 
+}
+
+
+.body-content {
+	display:flex;
+}
+
+
+/* competition list column */
+
+#fixed-pillar {
+	  margin-top: 20px;
+      width: 30%;
+      height: 100%;
+      background-color: #404040;
+      color: white;
+      overflow-y: scroll;
+}
+
+.input-container {
+	position: relative;
+}
+
+.input-container input[type="text"]{
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    height: auto;
+    background-image: url('https://www.jimmyjohns.com/static/media/geolocation-off.ad16b194bbd04d84673e0bded73f5663.svg'); /* Path to your icon image */
+    background-position: 10px center; 
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: 3px solid white ;
+    box-shadow: inset 0 0 0 4px #87CEEB;
+}
+
+#fixed-pillar input {
+	padding: 10px 40px;
+	margin-top: 45px;
+	margin-left: 17%;
+}
+
+.competition {
+	margin-left: 20%;
+}
+
+.competition h3 {
+	display: inline-block;
+  	border-bottom: 1px solid white;
+  	font-size: 23px;
+}
+
+.competition li {
+	margin-bottom: 15px;
+	margin-left:-25px;
+	list-style-type: square;
+	font-size: 17;
+	color: silver;
+}
+
+/* button should stand out */
+
+ .competition button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5%;
+    border: 3px solid white ;
+	box-shadow: inset 0 0 0 4px #87CEEB;
+	font-weight: bold;
+}
+
+ .competition button:hover {
+    background-color: #87CEEB;
+}
+
+.competition p {
+	border-bottom: 1px solid white;
+	display: inline-block;
+	margin-left: 17%;
+}
+
+.competition p:hover {
+	color: #87CEEB;
+	cursor: pointer;
+}
+
+/* had to extend width to match column width of fixed-pillar */
+
+
+#fixed-pillar .news-row {
+      padding: 15px;
+      max-width: 120% !important;
+      display:flex;
+      background-color: black;
+}
+
+.news-image img{
+	width: 136%;
+	height: 80%;
+	padding-top: 25px;
+}
+
+.news-content {
+    padding-left: 10%;
+}
+
+.news-row h3 {
+    margin-bottom: 10px;
+    color:white;
+}
+
+.timestamp {
+    margin-bottom: 10px;
+    color:grey;
+}
+
+.news-row p {
+    line-height: .8;
+    color:silver;
+    font-size: 10px;
+}
+
+.news-row div:hover {
+	filter: brightness(0.7);
+	cursor: pointer;
+}
+
+#main-pillar {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-pillar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row-pillar div {
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.row-pillar div:last-child {
+    margin-right: 0;
+}
+
+.horizontal-pillar-line {
+    border-top: 1px solid #ccc; 
+    margin-bottom: 10px;
+}
+
+/* musk image should be half of map column */
+
+.musk-container {
+    position: relative;
+    display: inline-block;
+}
+
+.musk-container img{
+	max-width: 100%;
+    height: 100%;
+    border:1px solid white;
+    border-radius: 10px;
+    display: block;
+}
+
+.musk-container img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+	overflow:hidden;
+}
+
+.musk-overlay {
+    position: absolute;
+    top: 74%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.musk-overlay-more {
+    position: absolute;
+    top: 16%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding:1px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.steve-overlay-more {
+    position: absolute;
+    top: 16%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding:1px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.jobs-overlay {
+    position: absolute;
+    top: 75%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.body-content h2 {
+	color:white;
+	font-size: 35px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 3px solid white ;
+	box-shadow: inset 0 0 0 4px #87CEEB;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid white ;
+	box-shadow: inset 0 0 0 4px #87CEEB;
+}
+
+.faq-question.active {
+    background-color: #e0e0e0;
+}
+
+/* it will expand */
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+
+.para1 h1{
+	color: white;
+}
+
+.para1 {
+	color: silver;
+	margin: 5%;
+    width:90%;
+}
+
+.row1 {
+	margin: 30px;
+}
+
+/* each row should have full width */
+
+.sponsor-row1 {
+	display:flex;
+	justify-content: center;
+	background: white;
+	width: 100%;
+}
+
+.sponsor-row1 img{
+	width:70%;
+	margin-left: 5%;
+}
+
+.row1 .col {
+	float: left;
+	width: 45%;
+	border-radius: 10px;
+    margin-left:5%;
+}
+
+
+.row1 .col2 {
+	background-color: white;
+	width: 45%;
+	float: right;
+	border-radius: 10px;
+    margin-right: 5%;
+}
+
+.row1 h2{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.row1 p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.first-word {
+	color: hsl(0, 0%, 20%) ;
+	font-weight: bold;
+}
+
+.row1:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+/* erase row settings */
+
+
+.sponsor-row1:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+.row2 {
+	margin: 30px;
+}
+
+.row2 .col3 {
+	float: left;
+	width: 45%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.row2 .col4 {
+	width: 45%;
+	float: right;
+    margin-right: 5%;
+    margin-top: -3%;
+    margin-bottom: 3%;
+}
+
+.row2 .col4 img {
+	width: 45%;
+}
+
+.row2:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+.contrib-container {
+	display: flex;
+	margin-left: 45px;
+	width: 90%;
+	padding-top: 30px;
+
+}
+
+.contrib-container, .contribution-para h1{
+	color: white;
+}
+
+.contrib-container, .contribution-para p{
+	width: 85%;
+	color: silver;
+}
+
+
+
+form {
+	width: 50%;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	gap:20px;
+	padding-top: 83px;
+	padding-bottom: 20px;
+}
+
+/* label should be close to form */
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: hsl(0, 0%, 65%);
+}
+
+input {
+	width: 170px;
+}
+
+input[type=submit]:hover {
+	background-color: #87CEEB;
+	border: 1px solid white;
+}
+
+.contrib-container:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+/* pics should be displayed together like a gallery */
+
+.students {
+	display:flex;
+	margin-top: -165px;
+	margin-left: 45px;
+
+}
+
+.students img {
+	width:20%;
+	height:auto;
+	padding-bottom: 40px;
+}
+
+.students:hover img {
+	filter: brightness(30%);
+}
+
+.viewer {
+	display: inline-block;
+	margin-left: -28.5%;
+	margin-top: 8%;
+}
+
+
+
+.hide {
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px; 
+    border: 3px solid white;
+    padding: 10px 50px; 
+    margin-right: 100px;
+    background: rgba(0, 0, 0, 0.5); 
+    transition: opacity 0.7s ease;
+}
+
+.hide:hover {
+	background-color: #87CEEB;
+	color: black;
+}
+
+.students:hover .hide{
+    opacity: 1;
+}
+
+
+footer {
+	height: 40%;
+	background-color: black;
+	width:100%;
+    margin-top: 3%;
+}
+
+
+.footer-cols {
+	display: flex;
+	margin-top: -25px;
+    margin-left:1.5% ;
+}
+
+.footer-pics {
+    display:flex;
+    margin-left:auto;
+    margin-right:3%;
+}
+
+.footer-column h3 {
+	color: silver;
+	margin-top: 35px;
+	margin-left: 40px;
+}
+
+.footer-column ul  {
+	list-style-type: none;
+	color: hsl(0, 0%, 65%);
+}
+
+.footer-column ul li {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-column ul li:hover {
+	color: #87CEEB;
+    cursor: pointer;
+}
+
+
+
+
+.footer-img img {
+	width: 100%;
+	padding-top: 30px;
+}
+
+
+
+
+.divider2 {
+    width: 100%;
+    height: 1px;
+    background-color: #555; 
+    margin-top: 18px; 
+}
+
+
+
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    margin-top: 35px;
+    margin-left: -20px
+}
+
+.footer-list li {
+    margin: 0 20px; 
+    color: hsl(0, 0%, 65%); 
+    position: relative;
+    font-size: 13px;
+}
+
+.footer-list li:hover {
+	color: #87CEEB;
+    cursor: pointer;
+}
+
+.footer-list li::after {
+    content: "|";
+    position: absolute;
+    right: -20px; 
+    color: #555;
+}
+
+.last-sentence {
+	display:flex;
+	justify-content: center;
+    padding-bottom: 2%;
+}
+
+
+.footer-sentence {
+    font-size: 13px; 
+    color: hsl(0, 0%, 65%);
+    margin-top: -4px;
+}
